@@ -3,6 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    private string currentSceneName;
+
+    private void Start() {
+        currentSceneName = SceneManager.GetActiveScene().name;
+    }
+
     public void LoadMainMenu(){
         SceneManager.LoadScene("MainMenu");
     }
@@ -25,5 +31,9 @@ public class LevelManager : MonoBehaviour
 
     public void LoadGameOver(){
         SceneManager.LoadScene("GameOver");
+    }
+
+    public void LoadCurrentScene(){
+        SceneManager.LoadScene(currentSceneName);
     }
 }
