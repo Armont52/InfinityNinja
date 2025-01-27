@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         _currentState = new Distributor(this);
-        timer.Set(1,0); // 타이머 작동 테스트 용. 추후 삭제
+        //timer.Set(1,0); // 타이머 작동 테스트 용. 추후 삭제
     }
 
     void Update()
