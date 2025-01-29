@@ -28,4 +28,8 @@ public class LevelManager : MonoBehaviour
     public void LoadCurrentScene(){
         SceneManager.LoadScene(currentSceneName);
     }
+
+    public void SetStageNumber(int number){
+        Singleton.instance.StageNumber = number;
+    }
 }
