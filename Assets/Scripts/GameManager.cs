@@ -1,5 +1,4 @@
-using System;
-using TMPro;
+using System.Collections;   
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,7 +32,8 @@ public class GameManager : MonoBehaviour
         _currentState.PressedC();
     }
 
-    // public void TimeSpend(){
-    //     Invoke(nameof(_currentState.TimeSpent), 0.2f);
-    // }
+    public IEnumerator TimeSpend(){
+        yield return new WaitForSeconds(1);
+        _currentState.TimeSpent();
+    }
 }

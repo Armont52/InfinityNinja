@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class Stage
 {
-    protected int minutes, seconds;
+    protected int timeLimit;
     protected int[] enemyList;
     protected Queue<int> enemyQueue;
 

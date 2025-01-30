@@ -4,8 +4,7 @@ using UnityEngine;
 public class Stage1 : Stage
 {
     Stage1(){
-        minutes = 1;
-        seconds = 0;
+        timeLimit = 60;
         enemyList = new int[] {1,2,3,1,2,3,1,2,3};
         enemyQueue = new Queue<int>(enemyList);
     }
